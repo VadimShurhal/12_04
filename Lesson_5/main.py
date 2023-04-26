@@ -26,6 +26,7 @@
  #  git add .
  #  git commit -m "First commit"
  #  git push
+ #  git branch -M master
 
 
  #  README.MD
