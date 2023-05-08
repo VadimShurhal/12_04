@@ -1,0 +1,15 @@
+Классы
+Абстракция
+Наследование
+Полиморфизм
+Инкапсуляция
+Магические методы класса
+
+
+https://docs.python.org/3/tutorial/classes.html
+
+https://python-scripts.com/python-class
+
+https://python-scripts.com/object-oriented-programming-in-python
+
+https://codechick.io/tutorials/python/python-what-is-oop

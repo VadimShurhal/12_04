@@ -1,0 +1,10 @@
+Topics:
+
+work with files
+work and navigate in filesystem
+
+
+https://pynative.com/python/file-handling/
+https://docs.python.org/3/library/exceptions.html
+https://docs.python.org/3/library/os.html
+https://docs.python.org/3/library/os.path.html

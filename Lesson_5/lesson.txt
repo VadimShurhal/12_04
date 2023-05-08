@@ -1,0 +1,15 @@
+GIT, Github
+
+create repository
+add files
+commit
+push
+  Try except
+
+
+
+https://git-scm.com/downloads
+https://www.w3schools.com/python/python_try_except.asp
+addd ssh key
+https://www.youtube.com/watch?v=rN7wnChbwaY
+https://www.youtube.com/watch?v=k805rTsX_iI&feature=youtu.be
