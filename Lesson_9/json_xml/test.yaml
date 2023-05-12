@@ -1,0 +1,39 @@
+# this is YAML file
+song: "Oy u luzi ..."
+song_2: "Stojaru"
+pi: 3.14159
+xmas: true
+none: null
+french-hens: 3
+#One line list
+lst1 : [string value, 123, null]
+
+#Multiline list
+lst2:
+ - bananas
+ - oranges
+ - raisins
+ - peanuts
+
+dict1: {name : 'Joe', language : ['python', 'java'], job : false}
+dict2:
+ name: Anna
+ age: 25
+ golden-rings: 5
+ friends:
+   count: 5
+   location: "Kyiv"
+ turtle-doves: two
+
+
+---
+big_str: >
+ Hello nkdwaud lwand uawbd luwa Hello nkdwaud lwand uawbd luwaHello
+ nkdwaud lwand uawbd luwaHello nkdwaud lwand uawbd luwaHello
+ nkdwaud lwand uawbd luwaHello nkdwaud lwand uawbd luwa
+ dear User
+
+big_str_2: |
+ My 
+ big
+ string
