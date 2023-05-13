@@ -18,10 +18,8 @@ from pprint import pprint
 #             print(f'{k} --- > {v}')
 
 
-
 users = [{'name': 'Joe'},
-         {'name':'Jack'}]
-
+         {'name': 'Jack'}]
 
 yaml_obj = yaml.dump(users)
 
@@ -29,11 +27,8 @@ print(yaml_obj)
 
 print(type(yaml_obj))
 
-
 #  .yaml  .yml
 
 with open('my_yaml.yaml', 'w') as f:
     data = yaml.dump(users, f)
-
-
 
