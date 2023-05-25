@@ -1,0 +1,16 @@
+2023-05-24 20:14:39,819 INFO x/y successful with result 0.09090909090909091
+2023-05-24 20:14:39,820 WARNING ZeroDivisionError
+Traceback (most recent call last):
+  File "C:\Users\vadym.shurkhal\Desktop\hillel\12_04\Lesson_13\main.py", line 37, in <module>
+    result = x / y
+             ~~^~~
+ZeroDivisionError: division by zero
+2023-05-24 20:14:39,823 INFO x/y successful with result 0.23076923076923078
+2023-05-24 20:14:39,823 INFO x/y successful with result 0.0
+2023-05-24 20:14:39,824 INFO x/y successful with result 0.18376068376068377
+2023-05-24 20:14:39,824 WARNING ZeroDivisionError
+Traceback (most recent call last):
+  File "C:\Users\vadym.shurkhal\Desktop\hillel\12_04\Lesson_13\main.py", line 37, in <module>
+    result = x / y
+             ~~^~~
+ZeroDivisionError: division by zero
