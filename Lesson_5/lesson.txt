@@ -4,12 +4,12 @@ create repository
 add files
 commit
 push
-  Try except
+Try except
 
 
 
 https://git-scm.com/downloads
 https://www.w3schools.com/python/python_try_except.asp
-addd ssh key
+add ssh key
 https://www.youtube.com/watch?v=rN7wnChbwaY
 https://www.youtube.com/watch?v=k805rTsX_iI&feature=youtu.be
