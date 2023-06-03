@@ -1,0 +1,28 @@
+- What is pytest
+- Install pytest
+- different betweeen unit test, why we use it ?
+- test naming («test_*.py» or «*_test.py»)  run class TestSimple
+- Functioanl and OOP approach
+- simple test
+- run test (flags for run)
+    pytest test_mod.py::test_func
+    pytest test_mod.py::TestClass::test_method
+
+- setup and teardown
+- fixture (scope session, function, module, class) //// autouse=True
+-pytest marks
+        pytest -m
+
+- pytest -x
+        --maxfail=2
+- fixture in fixture
+- report
+    --junitxml=junit_report.xml
+
+- pytest-xdist
+
+-skip
+-skipif
+-xfail
+
+-request , tmpdir
