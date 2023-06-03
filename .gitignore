@@ -3,3 +3,4 @@ __pycache__
 venv/
 CW/
 check_hw.py
+.pytest_cache
