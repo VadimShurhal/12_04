@@ -10,7 +10,7 @@ from Lesson_15.tests.example_user import Human
 
 @pytest.fixture(scope='session')
 def human():
-     Human('Joe', 22, 'Python')
+    return Human('Joe', 22, 'Python')
 
 
 @pytest.fixture(scope='session')

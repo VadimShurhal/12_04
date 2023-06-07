@@ -20,7 +20,7 @@ class TestSimple:
     @pytest.mark.parametrize("arg_1", [1, 2, 3])
     @pytest.mark.parametrize("arg_2", [3, 4, 5])
     def test_params(self, arg_1, arg_2):
-        print(f'We gat arg_1 : {arg_1} and arg_2 {arg_2}')
+        print(f'We get arg_1 : {arg_1} and arg_2 {arg_2}')
         assert True
 
 
