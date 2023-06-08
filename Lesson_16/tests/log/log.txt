@@ -1,0 +1,4 @@
+INFO     root:test_oop.py:12 test_human_fixture
+INFO     root:test_oop.py:16 test_human_fixture
+INFO     root:test_oop.py:21 test_human_fixture
+INFO     root:test_oop.py:31 test_db_fixture_age_2

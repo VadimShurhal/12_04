@@ -4,3 +4,4 @@ venv/
 CW/
 check_hw.py
 .pytest_cache
+test_artifacts/1.pdf

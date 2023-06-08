@@ -15,14 +15,19 @@
 
 - pytest -x
         --maxfail=2
-- fixture in fixture
+
+- fixture in fixture (many fixture)
 - report
     --junitxml=junit_report.xml
 
 - pytest-xdist
 
 -skip
+    pytest.skip
 -skipif
 -xfail
-
+    pytest.fail
+    pytest --runxfail  (Ignoring xfail)
+    pytest.ini
 -request , tmpdir
+fixture (scope session, function, module, class) //// autouse=True
