@@ -1,0 +1,9 @@
+XPath, CSS
+Selenium products/concepts/arhitecture
+Selenium Webdriver
+Locators
+Find_element(s)
+Entering/getting text
+Waits: sleep, implicit, explicit
+Keys
+Driver properties: driver.title, driver.name, driver.current_url, driver.page_source
