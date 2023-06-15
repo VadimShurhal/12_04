@@ -1,16 +1,13 @@
 import time
-
 import allure
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
+
 
 USER_NAME = 'karpovolegggg@gmail.com'
 USER_PASSWORD = 'Hillel2023!'
 
 
 @allure.story('Create repository on GitHub')
-class TestTestselenium:
+class TestSelenium:
 
     @allure.description(f'Create repo for user {USER_NAME} with password {USER_PASSWORD}')
     @allure.title('Create repo')
