@@ -20,7 +20,7 @@ class HomePage(BasePage):
     def click_login_button(self):
         self.wait_for(self.LOGIN_BUTTON).click()
         allure.attach(self.driver.get_screenshot_as_png(), name="screenshot", attachment_type=AttachmentType.PNG)
-        allure.attach.file('1.pdf', name="my_pdf_file", attachment_type=AttachmentType.PDF)
+        # allure.attach.file('1.pdf', name="my_pdf_file", attachment_type=AttachmentType.PDF)
         return LoginPage(self.driver)
 
 

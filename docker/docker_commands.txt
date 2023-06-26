@@ -1,0 +1,50 @@
+Docker commands:
+docker pull <IMAGE_NAME> # Завантажити образ на локальну машину
+
+docker image ls # Переглянути список завантажених образів
+docker images # Переглянути список завантажених образів
+
+docker ps # Переглянути список запущених контейнерів
+docker ps -a # Переглянути список усіх контейнерів
+
+docker run <IMAGE_NAME|IMAGE_ID> # Запустити контейнер на основі образу
+docker run -it <IMAGE_NAME|IMAGE_ID> # Запустити контейнер в інтерактивному режимі
+
+docker rm <CONTAINER_ID> # Видалити контейнер
+docker rm <CONTAINER_ID_1> <CONTAINER_ID_1> # Видалити контейнери
+docker container prune # Видалити всі контейнери
+
+docker rmi <IMAGE_ID> # Видалити образ
+docker rmi <IMAGE_ID_1> <IMAGE_ID_2> # Видалити образи
+docker image prune # Видалити всі образи
+
+docker run -p <LOCAL_PORT>:<DOCKER_PORT> <IMAGE_NAME|IMAGE_ID> # Запустити контейнер на основі образу, зробити мапінг локального та докер порту
+docker stop <CONTAINER_ID> # Зупинити контейнер
+docker exec -it <CONTAINER_ID> /bin/bash # Зайти всередину контейнера. /bin/bash – шлях до шеллу може бути іншим. На деяких контейнерах ця можливість може бути недоступною
+docker run --name <CONTAINER_NAME> <CONTAINER_ID> # Запустити контейнер та призначити йому ім'я
+docker run --rm <CONTAINER_ID> # видалити контейнер після зупинки
+docker run -it <CONTAINER_ID> # інтерактивно зайти в контейнер
+docker run -e <ENV_VAR>=<ENV_VAR_VALUE> <IMAGE_NAME|IMAGE_ID> # Передати всередину контейнера змінну оточення
+docker run -e <ENV_VAR_1>=<ENV_VAR_VALUE_1> -e <ENV_VAR_2>=<ENV_VAR_VALUE_2> <IMAGE_NAME|IMAGE_ID> # Передати всередину контейнера кілька змінних оточення
+docker run -e --env-file <PATH_TO_ENV_FILE> <IMAGE_NAME|IMAGE_ID> # Надіслати змінні оточення у файлі
+
+docker build <DIRECTORY> # Створити образ на основі докерфайлу
+docker build -t <IMAGE_NAME> <DIRECTORY> # Призначити образу ім'я
+docker build -t <IMAGE_NAME>:<TAG> <DIRECTORY> # Призначити образу тег
+
+docker push <USERNAME/IMAGE_NAME:TAG> # Завантажити образ у докер хаб
+docker tag <CURRENT_NAME> <NEW_NAME> # Створити копію образу з новим ім'ям
+
+docker image inspect <IMAGE_NAME> # Переглянути структуру образу (з яких образів він побудований)
+
+docker volume ls переглянути список Volumes
+docker volume inspect <VOLUME_NAME>
+docker volume create <VOLUME_NAME>
+docker volume rm <VOLUME_NAME>
+docker volume prune
+
+.dockerignore
+-d
+-rm
+--name
+docker ps -q

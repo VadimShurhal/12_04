@@ -16,7 +16,6 @@ class BasePage:
         self.api = Api()
         self.db = DB()
 
-
     def find(self, locator):
         logging.info(f'Click {locator}')
         return self.driver.find_element(locator)
@@ -30,4 +29,3 @@ class BasePage:
 
     def get_connection(self):
         self.db.connection()
-
