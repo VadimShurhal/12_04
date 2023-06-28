@@ -39,6 +39,12 @@ docker tag <CURRENT_NAME> <NEW_NAME> # Створити копію образу 
 
 docker image inspect <IMAGE_NAME> # Переглянути структуру образу (з яких образів він побудований)
 
+
+Copy a local file into container
+ docker cp ./some_file CONTAINER:/work
+Copy files from container to local path
+ docker cp CONTAINER:/var/logs/ /tmp/app_logs
+
 docker volume ls переглянути список Volumes
 docker volume inspect <VOLUME_NAME>
 docker volume create <VOLUME_NAME>
@@ -49,8 +55,3 @@ docker volume prune
 -rm
 docker ps -q
 
-
-Copy a local file into container
- docker cp ./some_file CONTAINER:/work
-Copy files from container to local path
- docker cp CONTAINER:/var/logs/ /tmp/app_logs
