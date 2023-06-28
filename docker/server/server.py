@@ -1,20 +1,26 @@
 import json
+import logging
 import os
 
 from flask import Flask
 
 app = Flask(__name__)
 
+logging.basicConfig(filename='record.log', level=logging.DEBUG, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
+
 
 @app.route("/")
 def home():
-    return 'Glory to Ukraine!'
+    text = 'Glory to Ukraine!'
+    app.logger.info(f'Main page with content {text}')
+    return text
 
 
 @app.route('/hillel')
 def hillel():
     data = {'Lesson': 'Docker',
-                       'teacher': 'Vadym'}
+            'teacher': 'Vadym'}
+    app.logger.info(f'Main page with data {data}')
     return json.dumps(data)
 
 
