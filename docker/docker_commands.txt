@@ -28,6 +28,8 @@ docker run -e <ENV_VAR>=<ENV_VAR_VALUE> <IMAGE_NAME|IMAGE_ID> # Передати
 docker run -e <ENV_VAR_1>=<ENV_VAR_VALUE_1> -e <ENV_VAR_2>=<ENV_VAR_VALUE_2> <IMAGE_NAME|IMAGE_ID> # Передати всередину контейнера кілька змінних оточення
 docker run -e --env-file <PATH_TO_ENV_FILE> <IMAGE_NAME|IMAGE_ID> # Надіслати змінні оточення у файлі
 
+docker run -p 5000:5000 -d --name app <image>
+
 docker build <DIRECTORY> # Створити образ на основі докерфайлу
 docker build -t <IMAGE_NAME> <DIRECTORY> # Призначити образу ім'я
 docker build -t <IMAGE_NAME>:<TAG> <DIRECTORY> # Призначити образу тег
@@ -44,7 +46,11 @@ docker volume rm <VOLUME_NAME>
 docker volume prune
 
 .dockerignore
--d
 -rm
---name
 docker ps -q
+
+
+Copy a local file into container
+ docker cp ./some_file CONTAINER:/work
+Copy files from container to local path
+ docker cp CONTAINER:/var/logs/ /tmp/app_logs
