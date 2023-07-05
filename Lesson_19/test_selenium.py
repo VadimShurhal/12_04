@@ -1,9 +1,8 @@
-import time
 import allure
 
-from Lesson_19.constants import GithubTitles
 from Lesson_19.pages.home_page import HomePage
 from Lesson_19.pages.login_page import LoginPage
+from Lesson_19.pages.user_page import UserPage
 
 USER_NAME = 'karpovolegggg@gmail.com'
 USER_PASSWORD = 'Hillel2023!'
@@ -16,15 +15,17 @@ class TestSelenium:
     @allure.title('Create repo')
     def test_selenium_2(self):
         home_page = HomePage(self.driver)
-        home_page.check_title()\
-            .click_login_button()\
-            .check_title()\
-            .set_login(USER_NAME)\
-            .set_password(USER_PASSWORD)\
-            .click_sign_in_button()\
-            .check_title()\
-            .click_create_repo_button()
+        home_page.check_title()
+        home_page.click_login_button()
 
+        login_page = LoginPage(self.driver)
+        login_page.set_login(USER_NAME)
+        login_page.set_password(USER_PASSWORD)
+        login_page.click_sign_in_button()
+
+        user_page = UserPage(self.driver)
+        user_page.check_title()
+        user_page.click_create_repo_button()
 
 
         # self.login_page.check_title()

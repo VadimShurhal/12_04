@@ -9,18 +9,16 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 def pytest_addoption(parser):
-    parser.addoption(
-        "--url", action="store", default="https://github.com/", help="my option: type1 or type2"
-    )
+    parser.addoption("--url", action="store", default="https://github.com/", help="Base url")
 
-# @pytest.fixture
-# def url(request):
-#     return request.config.getoption("--url")
+@pytest.fixture
+def url(request):
+    return request.config.getoption("--url")
 
-#
-# def pytest_exception_interact(node):
-#     driver = node.instance.driver
-#     allure.attach(driver.get_screenshot_as_png(), name="screenshot", attachment_type=AttachmentType.PNG)
+
+def pytest_exception_interact(node):
+    driver = node.instance.driver
+    allure.attach(driver.get_screenshot_as_png(), name="screenshot", attachment_type=AttachmentType.PNG)
 
 
 @pytest.fixture(autouse=True)
@@ -47,12 +45,5 @@ def driver(request):
 #     # teardown
 #     driver.quit()
 
-
-# @pytest.fixture(autouse=True, scope='session')
-# def driver():
-#     db = db()
-#     db.connection()
-#     yield db
-#     bd.close()
 
 

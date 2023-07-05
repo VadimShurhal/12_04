@@ -51,7 +51,4 @@ docker volume create <VOLUME_NAME>
 docker volume rm <VOLUME_NAME>
 docker volume prune
 
-.dockerignore
--rm
-docker ps -q
-
+docker run -v <volume>:<DIR_IN_DOCKER> -p 5000:5000 -d --name app <image>

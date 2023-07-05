@@ -11,9 +11,8 @@ class UserPage(BasePage):
 
     @allure.step('Check title on user page')
     def check_title(self):
-        self.check_title_on_page(GithubTitles.USER_PAGE)
-        return self
+        return self.check_title_on_page(GithubTitles.USER_PAGE)
 
     @allure.step('Click create repo button')
     def click_create_repo_button(self):
-        self.wait_for(self.CREATE_REPO_BUTTON).click()
+        return self.wait_for(self.CREATE_REPO_BUTTON).click()

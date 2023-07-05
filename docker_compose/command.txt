@@ -1,0 +1,8 @@
+docker-compose build - зібрати проект
+docker-compose up -d – запустити проект
+docker-compose stop - зупинити проект
+docker-compose down - зупинити проект
+docker-compose logs -f [service name] — переглянути логі сервісу
+docker-compose ps – вивести список контейнерів
+docker-compose exec [service name] [command» - виконати команду в контейнері
+docker-compose images - список образів
