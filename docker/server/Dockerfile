@@ -4,7 +4,7 @@ WORKDIR /server
 
 COPY . /server
 
-RUN pip install -r requirements.txt &&  apk --no-cache add curl
+RUN pip install -r requirements.txt && apk --no-cache add curl
 
 CMD ["python3", "server.py"]
 

@@ -11,6 +11,8 @@ Command
 - ./cm selenoid status
 - ./cm selenoid stop
 - ./cm selenoid-ui start    # http://localhost:8080/#/
+- ./cm selenoid-ui stop
+
 
 Path
 
@@ -21,3 +23,7 @@ Path
 - запис відео "enableVideo": True
 - зберігаємо логи сесії "enableLog": True
 - Вмикаємо VNC "enableVnc": True
+
+
+chmod +x cm_darwin_arm64
+./cm_darwin_arm64 selenoid start

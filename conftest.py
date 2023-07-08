@@ -8,8 +8,8 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-def pytest_addoption(parser):
-    parser.addoption("--url", action="store", default="https://github.com/", help="Base url")
+# def pytest_addoption(parser):
+#     parser.addoption("--url", action="store", default="https://github.com/", help="Base url")
 
 @pytest.fixture
 def url(request):
