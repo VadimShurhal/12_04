@@ -3,9 +3,10 @@ import os
 import pycodestyle
 from pyflakes.scripts import pyflakes
 
-dir = os.path.normpath('Lesson_1')
+DIR = os.path.normpath('Lesson_1')
+
 config_file = os.path.normpath('tox.ini')
-paths_to_check = [dir]
+paths_to_check = [DIR]
 
 
 class TestCommitVerification:
@@ -17,5 +18,5 @@ class TestCommitVerification:
 
     def test_unused_import_and_vars(self):
         count_of_unused = pyflakes.checkRecursive(paths_to_check, reporter=None)
-        assert count_of_unused.get_count() == 0, 'Please check pyflakes errors'
-#
+        assert count_of_unused == 0, 'Please check pyflakes errors'
+
