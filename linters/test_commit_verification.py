@@ -3,10 +3,10 @@ import os
 import pycodestyle
 # from pyflakes.scripts import pyflakes
 
-DIR = os.path.normpath('Lesson_1')
+# DIR = os.path.normpath('Lesson_1')
 
 config_file = os.path.normpath('tox.ini')
-paths_to_check = [DIR]
+paths_to_check = ['Lesson_1']
 
 
 class TestCommitVerification:
