@@ -1,7 +1,9 @@
 import sqlite3
 from enum import Enum
 
-cursor = sqlite3.connect(r'C:\Users\vadym.shurkhal\AppData\Roaming\DBeaverData\workspace6\.metadata\sample-database-sqlite-1\Chinook.db').cursor()
+cursor = sqlite3.connect(
+    r'C:\Users\vadym.shurkhal\AppData\Roaming\DBeaverData\workspace6\.metadata\sample-database-sqlite-1\Chinook.db').cursor()
+
 
 # cursor.execute("CREATE TABLE Data(data_id INTEGER PRIMARY KEY, name TEXT, data INTEGER CHECK(data<10));")
 # cursor.execute("INSERT INTO Data(name, data) VALUES ('Hello', 3);")
@@ -23,15 +25,6 @@ all_result = cursor.fetchall()
 for item in all_result:
     print(item)
 
-
 # print(all_result)
 # con.commit()
 cursor.close()
-
-
-
-
-
-
-
-
