@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip && pip install -r requirements.txt
+        python -m pip install --upgrade pip && pip install pytest && pip install pycodestyle
     - name: Run commit verification
       run: |
         pytest linters/
