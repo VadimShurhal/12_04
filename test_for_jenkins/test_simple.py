@@ -2,8 +2,6 @@ import allure
 
 
 @allure.story('My first story')
-class TestAllure:
-
 class TestClass:
 
     @allure.description('My test description test_upper')
