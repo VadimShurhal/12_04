@@ -1,0 +1,74 @@
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.address`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.address` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.automotive`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.automotive` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.bank`.
+2023-08-23 20:38:14 [DEBUG] Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.barcode`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.barcode` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.color`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.color` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.company`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.company` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.credit_card` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.currency`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.currency` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.date_time`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.date_time` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.geo`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.geo` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.internet`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.internet` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.job`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.job` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.lorem`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.lorem` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.misc`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.misc` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.passport`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.passport` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.person`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.person` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.phone_number` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2023-08-23 20:38:14 [DEBUG] Looking for locale `en_US` in provider `faker.providers.ssn`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.ssn` has been localized to `en_US`.
+2023-08-23 20:38:14 [DEBUG] Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2023-08-23 20:38:14 [DEBUG] Started executable: `C:\Users\vadym.shurkhal\Desktop\hillel\12_04\Lesson_17\driver\chromedriver.exe` in a child process with pid: 5600
+2023-08-23 20:38:15 [DEBUG] POST http://localhost:52643/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-08-23 20:38:15 [DEBUG] Starting new HTTP connection (1): localhost:52643
+2023-08-23 20:38:17 [DEBUG] http://localhost:52643 "POST /session HTTP/1.1" 200 0
+2023-08-23 20:38:17 [DEBUG] Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"116.0.5845.110","chrome":{"chromedriverVersion":"116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382})","userDataDir":"C:\\Windows\\SystemTemp\\scoped_dir5600_1135879305"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:52647"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"9e6989f8542dbd14b18ea73e44ee3c1d"}} | headers=HTTPHeaderDict({'Content-Length': '867', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-08-23 20:38:17 [DEBUG] Finished Request
+2023-08-23 20:38:17 [DEBUG] POST http://localhost:52643/session/9e6989f8542dbd14b18ea73e44ee3c1d/timeouts {"implicit": 2000}
+2023-08-23 20:38:17 [DEBUG] http://localhost:52643 "POST /session/9e6989f8542dbd14b18ea73e44ee3c1d/timeouts HTTP/1.1" 200 0
+2023-08-23 20:38:17 [DEBUG] Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-08-23 20:38:17 [DEBUG] Finished Request
+2023-08-23 20:38:17 [DEBUG] POST http://localhost:52643/session/9e6989f8542dbd14b18ea73e44ee3c1d/url {"url": "https://kyiv.ithillel.ua/"}
+2023-08-23 20:38:19 [DEBUG] http://localhost:52643 "POST /session/9e6989f8542dbd14b18ea73e44ee3c1d/url HTTP/1.1" 200 0
+2023-08-23 20:38:19 [DEBUG] Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-08-23 20:38:19 [DEBUG] Finished Request
+2023-08-23 20:38:19 [DEBUG] POST http://localhost:52643/session/9e6989f8542dbd14b18ea73e44ee3c1d/window/maximize {}
+2023-08-23 20:38:19 [DEBUG] http://localhost:52643 "POST /session/9e6989f8542dbd14b18ea73e44ee3c1d/window/maximize HTTP/1.1" 200 0
+2023-08-23 20:38:19 [DEBUG] Remote response: status=200 | data={"value":{"height":840,"width":1552,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-08-23 20:38:19 [DEBUG] Finished Request
+2023-08-23 20:38:19 [DEBUG] GET http://localhost:52643/session/9e6989f8542dbd14b18ea73e44ee3c1d/title {}
+2023-08-23 20:38:20 [DEBUG] http://localhost:52643 "GET /session/9e6989f8542dbd14b18ea73e44ee3c1d/title HTTP/1.1" 200 0
+2023-08-23 20:38:20 [DEBUG] Remote response: status=200 | data={"value":"Комп'ютерна школа Hillel у Києві: Курси IT-технологій"} | headers=HTTPHeaderDict({'Content-Length': '101', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-08-23 20:38:20 [DEBUG] Finished Request
+2023-08-23 20:41:32 [INFO] Find element with locator ('xpath', "//button[@class='site-nav-link'][contains(text(), 'Школа')]")
+2023-08-23 20:41:39 [DEBUG] POST http://localhost:52643/session/9e6989f8542dbd14b18ea73e44ee3c1d/element {"using": ["xpath", "//button[@class='site-nav-link'][contains(text(), '\u0428\u043a\u043e\u043b\u0430')]"], "value": null}
+2023-08-23 20:41:39 [DEBUG] http://localhost:52643 "POST /session/9e6989f8542dbd14b18ea73e44ee3c1d/element HTTP/1.1" 400 0
+2023-08-23 20:41:39 [DEBUG] Remote response: status=400 | data={"value":{"error":"invalid argument","message":"invalid argument: 'using' must be a string\n  (Session info: chrome=116.0.5845.110)","stacktrace":"\tGetHandleVerifier [0x00F337C3+48947]\n\t(No symbol) [0x00EC8551]\n\t(No symbol) [0x00DCC92D]\n\t(No symbol) [0x00DF9D3D]\n\t(No symbol) [0x00DF9EFB]\n\t(No symbol) [0x00E28EF2]\n\t(No symbol) [0x00E150D4]\n\t(No symbol) [0x00E275DA]\n\t(No symbol) [0x00E14E86]\n\t(No symbol) [0x00DF16C7]\n\t(No symbol) [0x00DF284D]\n\tGetHandleVerifier [0x0117FDF9+2458985]\n\tGetHandleVerifier [0x011C744F+2751423]\n\tGetHandleVerifier [0x011C1361+2726609]\n\tGetHandleVerifier [0x00FB0680+560624]\n\t(No symbol) [0x00ED238C]\n\t(No symbol) [0x00ECE268]\n\t(No symbol) [0x00ECE392]\n\t(No symbol) [0x00EC10B7]\n\tBaseThreadInitThunk [0x765D00C9+25]\n\tRtlGetAppContainerNamedObjectPath [0x77C47B1E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77C47AEE+238]\n"}} | headers=HTTPHeaderDict({'Content-Length': '896', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-08-23 20:41:39 [DEBUG] Finished Request
+2023-08-23 20:41:44 [DEBUG] DELETE http://localhost:52643/session/9e6989f8542dbd14b18ea73e44ee3c1d {}
+2023-08-23 20:41:44 [DEBUG] http://localhost:52643 "DELETE /session/9e6989f8542dbd14b18ea73e44ee3c1d HTTP/1.1" 200 0
+2023-08-23 20:41:44 [DEBUG] Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-08-23 20:41:44 [DEBUG] Finished Request

@@ -14,11 +14,11 @@ from selenium.webdriver.support import expected_conditions as EC
 # driver = webdriver.Chrome()
 
 # # set path to chromedriver
-# PATH = r'C:\Users\vadym.shurkhal\Desktop\hillel\12_04\Lesson_17\driver\chromedriver.exe'
-# driver = webdriver.Chrome(service=Service(PATH))
+PATH = r'C:\Users\vadym.shurkhal\Desktop\hillel\12_04\Lesson_17\driver\chromedriver.exe'
+driver = webdriver.Chrome(service=Service(PATH))
 #
 # driver manager
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+# driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 
 # sleeps
@@ -26,7 +26,7 @@ driver.implicitly_wait(2)
 wait = WebDriverWait(driver, timeout=10, poll_frequency=1, ignored_exceptions=[ElementNotVisibleException])
 
 
-driver.get("https://www.google.com")
+driver.get("https://kyiv.ithillel.ua/")
 # time.sleep(2)
 
 search_field = driver.find_element(By.NAME, 'q')
