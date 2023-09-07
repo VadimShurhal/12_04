@@ -11,6 +11,7 @@
 
 - on_start
 - on_stop
+- 
 for users and for TaskSet
 
 # wait_time
@@ -30,3 +31,7 @@ Flags
 --tags
 - --log_file my_log.log
 
+
+
+users_count = 5 
+/posts 100

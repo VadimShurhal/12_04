@@ -1,6 +1,6 @@
 import random
 
-from locust import task, between, HttpUser
+from locust import task, between, HttpUser, tag
 from faker import Faker
 
 
@@ -24,11 +24,13 @@ class MyFirstTest(HttpUser):
         load = TestLoadUser()
         load.test_load_users()
 
-    @task(6)
+    @task
+    @tag('post')
     def get_all_posts(self):
         self.client.get('posts')
 
-    @task(2)
+    @task
+    @tag('crud')
     def crud(self):
         fake = Faker()
 
@@ -37,11 +39,16 @@ class MyFirstTest(HttpUser):
                 'title': fake.name(),
                 'body': fake.sentence()}
 
-        responce = self.client.post('posts', data=post)
-        if user_id < 10:
-            raise SomeException("We can't create post")
+        with self.client.post('posts', data=post, catch_response=True, name=f"Create user with id {user_id}") as response:
+        # response = self.client.post('posts', data=post)
+            print(f"Status code : {response.status_code}")
+            if user_id == 3:
+                raise SomeException("We can't create post")
 
-        user_id = responce.json().get('userId')
+            if user_id == 2:
+                response.failure(f"We don't use user with id {user_id}")
+
+        user_id = response.json().get('userId')
 
         # Get post for user
         self.client.get(f'posts/{user_id}')
